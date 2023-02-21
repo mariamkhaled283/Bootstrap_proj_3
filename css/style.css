@@ -1,0 +1,111 @@
+body{
+    background-color: rgb(109, 109, 109) !important;
+}
+.navbar-brand:hover {
+    transition: 1s;
+    text-shadow: 10px 10px 20px white, -10px -10px 20px white;
+}
+.view-button{
+    color: rgb(199, 195, 192) !important;
+}
+.view-button:hover{
+    color: white !important;
+}
+.wel-btn:hover{
+    background-color: rgb(209, 168, 114) !important;
+    font-weight: 600 !important;
+    color: black !important;
+}
+.linhere:hover{
+    color: white !important;
+    text-decoration: underline !important;
+}
+.dropdown-item:hover{
+    background-color: rgb(67, 100, 161) !important;
+    color: white !important;
+    font-weight: 600;
+}
+.container-head{
+    width: 100%;
+    height: 55px;
+    background-color: rgba(139, 132, 132,0.4);
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.accordion-button:hover{
+    background-color: rgb(41, 41, 41);
+    color: white;
+}
+.image-nav{
+    cursor: pointer;
+}
+.fixedimg1{
+    background-image: url(../images/gallery/gallery-2.jpg);
+}
+.fixedimg2{
+    background-image: url(../images/gallery/gallery-3.jpg);
+}
+.fixedimg{
+    background-attachment: fixed;
+    background-size: cover;
+    height: 250px;
+}
+.carousel-caption{
+    border-radius: 15px;
+    background-color: rgba(139, 132, 132,0.3);
+}
+.copbtn {
+    position: relative;
+    left: 20px;
+}
+.copbtn::before {
+    position: absolute;
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #dcd3d8 transparent;
+    top: 26px;
+    left: 18px;
+    display: none;
+}
+
+.copbtn::after {
+    position: absolute;
+    content: " ";
+    height: 44px;
+    width: 80px;
+    background-color: #dcd3d8;
+    top: 46px;
+    left: -12px;
+    border-radius: 5px;
+    display: none;
+}
+
+.copbtn:active::before,
+.btn:hover::before {
+    display: block;
+}
+.copbtn:hover::after {
+    content: "copy to clipboard";
+    color: #444146;
+    font-size: 14px;
+    display: block;
+}
+
+.copbtn:active::after {
+    content: "copied";
+    display: block;
+    height: 25px;
+}
+.myicon {
+    height: 30px;
+    width: 30px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-image: initial;
+    border-radius: 17px;
+}
